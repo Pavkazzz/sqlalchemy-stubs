@@ -1,8 +1,8 @@
 from setuptools import setup
 import os
 
-name = 'sqlalchemy-stubs'
-description = 'SQLAlchemy stubs and mypy plugin'
+name = 'sqlalchemy-stubs-fixes'
+description = 'SQLAlchemy stubs and mypy plugin with fixes'
 
 install_instructions = """\
 # Experimental SQLAlchemy type stubs and mypy plugin
@@ -18,7 +18,7 @@ The final goal is to be able to get precise types for most common patterns.
 ## Installation
 
 ```
-pip install sqlalchemy-stubs
+pip install sqlalchemy-stubs-fixes
 ```
 
 Important: you need to enable the plugin in your mypy config file:
@@ -41,22 +41,22 @@ def find_stub_files():
     return result
 
 
-setup(name='sqlalchemy-stubs',
-      version='0.4',
+setup(name='sqlalchemy-stubs-fixes',
+      version='0.4.2',
       description=description,
       long_description=install_instructions,
       long_description_content_type='text/markdown',
       author='Ivan Levkivskyi',
       author_email='levkivskyi@gmail.com',
       license='MIT License',
-      url="https://github.com/dropbox/sqlalchemy-stubs",
+      url="https://github.com/pavkazzz/sqlalchemy-stubs",
       py_modules=['sqlmypy', 'sqltyping'],
       install_requires=[
           'mypy>=0.790',
           'typing-extensions>=3.7.4'
       ],
-      packages=['sqlalchemy-stubs'],
-      package_data={'sqlalchemy-stubs': find_stub_files()},
+      packages=['sqlalchemy-stubs-fixes'],
+      package_data={'sqlalchemy-stubs-fixes': find_stub_files()},
       classifiers=[
           'Development Status :: 3 - Alpha',
           'Programming Language :: Python :: 3'

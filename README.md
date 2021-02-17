@@ -55,7 +55,7 @@ and `select()`.
 ## Installation
 Install latest published version as:
 ```
-pip install -U sqlalchemy-stubs
+pip install -U sqlalchemy-stubs-fixes
 ```
 
 *Important*: you need to enable the plugin in your mypy config file:
@@ -66,7 +66,7 @@ plugins = sqlmypy
 
 To install the development version of the package:
 ```
-git clone https://github.com/dropbox/sqlalchemy-stubs
+git clone https://github.com/pavkazzz/sqlalchemy-stubs
 cd sqlalchemy-stubs
 pip install -U .
 ```

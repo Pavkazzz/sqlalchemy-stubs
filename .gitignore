@@ -37,3 +37,5 @@ htmlcov
 
 .tox
 
+dist/
+venv/
